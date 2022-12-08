@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_749125_legal_i_0_legal_agreement_request" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>eef311ab97955110940a7b771153afe5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>agreement_date</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>e2f311ab97955110940a7b771153afe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>agreement_type</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>e6f311ab97955110940a7b771153afe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>agreement_value</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>eaf311ab97955110940a7b771153afe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>counterparty_name</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>eef311ab97955110940a7b771153afe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>counterparty_signer_email</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>e2f311ab97955110940a7b771153afe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>counterparty_signer_name</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>e6f311ab97955110940a7b771153afe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_749125_legal_i_0_legal_agreement_request</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>26f311ab97955110940a7b771153afe5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_749125_legal_i_0_legal_agreement_request</sys_name>
+            <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+            <sys_update_name>sys_ui_list_x_749125_legal_i_0_legal_agreement_request_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Legal Intake Management">a388c41397151110940a7b771153af49</application>
+        <file_path/>
+        <instance_id>65a8398ddb62dbc04f035d00cf9619c1</instance_id>
+        <instance_name>dev60711</instance_name>
+        <name>sys_ui_list_x_749125_legal_i_0_legal_agreement_request_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_749125_legal_i_0_legal_agreement_request" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>eef311ab97955110940a7b771153afe5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>agreement_date</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>e2f311ab97955110940a7b771153afe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>agreement_type</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>e6f311ab97955110940a7b771153afe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>agreement_value</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>eaf311ab97955110940a7b771153afe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>counterparty_name</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>eef311ab97955110940a7b771153afe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>counterparty_signer_email</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>e2f311ab97955110940a7b771153afe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>counterparty_signer_name</element>
+            <list_id display_value="x_749125_legal_i_0_legal_agreement_request" element="NULL" name="x_749125_legal_i_0_legal_agreement_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">26f311ab97955110940a7b771153afe5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_id>e6f311ab97955110940a7b771153afe7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_749125_legal_i_0_legal_agreement_request</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-08-19 22:18:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>26f311ab97955110940a7b771153afe5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_749125_legal_i_0_legal_agreement_request</sys_name>
+            <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+            <sys_update_name>sys_ui_list_x_749125_legal_i_0_legal_agreement_request_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-08-19 22:18:21</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>]]></payload>
+        <payload_hash>-1611380536</payload_hash>
+        <record_name>Legal Agreement Request</record_name>
+        <reverted_from/>
+        <source>20bcfae52f121110443b5fd92799b660</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-02 17:51:00</sys_created_on>
+        <sys_id>a7bcbee52f121110443b5fd92799b606</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18399d29e4a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-02 17:51:00</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>67bcbee5271211107896b52ccf073006</update_guid>
+        <update_guid_history>67bcbee5271211107896b52ccf073006:-1611380536</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-08 17:08:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>27a2a7183ed6402b8669d4aef3ebb661</sys_id>
+        <sys_metadata>26f311ab97955110940a7b771153afe5</sys_metadata>
+        <sys_name>x_749125_legal_i_0_legal_agreement_request</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_parent display_value="">84bcbae52f121110443b5fd92799b6f8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_scope_delete display_value="">76957533a4164a94af24a6a3a42a2510</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_749125_legal_i_0_legal_agreement_request_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_749125_legal_i_0_legal_agreement_request_null">a7bcbee52f121110443b5fd92799b606</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

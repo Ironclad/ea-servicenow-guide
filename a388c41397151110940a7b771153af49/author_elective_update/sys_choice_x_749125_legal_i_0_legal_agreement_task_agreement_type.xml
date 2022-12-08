@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="agreement_type" table="x_749125_legal_i_0_legal_agreement_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>agreement_type</element>
+            <name>x_749125_legal_i_0_legal_agreement_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-16 22:21:10</sys_created_on>
+            <sys_name>agreement_type</sys_name>
+            <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+            <sys_update_name>sys_choice_x_749125_legal_i_0_legal_agreement_task_agreement_type</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>agreement_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Master Service Agreement</label>
+            <language>en</language>
+            <name>x_749125_legal_i_0_legal_agreement_task</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-16 22:21:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>MSA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>agreement_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-Disclosure Agreement</label>
+            <language>en</language>
+            <name>x_749125_legal_i_0_legal_agreement_task</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-16 22:21:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>NDA</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Default admin role</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_749125_legal_i_0.admin</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>admin</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-18 22:10:21</sys_created_on>
+        <sys_id>ab88c41397151110940a7b771153af7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_749125_legal_i_0.admin</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_update_name>sys_user_role_ab88c41397151110940a7b771153af7f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-18 22:10:21</sys_updated_on>
+    </sys_user_role>
+</record_update>

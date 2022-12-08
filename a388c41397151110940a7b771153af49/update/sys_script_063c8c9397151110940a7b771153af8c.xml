@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_749125_legal_i_0_legal_agreement_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Ironclad: Launch Agreement Workflow</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	// Business rule used to launch workflows when Agreement Request records are created.
+	gs.info('launching Ironclad workflow');
+	try {
+		// Get Ironclad env and API key from application properties
+		var icEnv = gs.getProperty("legalAgreements.ironclad_environment");
+		var icKey = gs.getProperty("legalAgreements.ironclad_api_key");
+		
+		// Get template IDs - define other workflow types if needed and use their template IDs here.
+		var icMSATemplate = gs.getProperty("legalAgreements.ironclad_msa_template");
+		var icNDATemplate = gs.getProperty("legalAgreements.ironclad_nda_template");
+		
+		// Get attribute names for the counterparty signer.  
+		// Signer attribute names are auto-generated with unique ID numbers 
+		// in each workflow
+		var icMSASignerNameAttr = gs.getProperty("legalAgreements.ironclad_msa_signer_name_attribute");
+		var icMSASignerEmailAttr = gs.getProperty("legalAgreements.ironclad_msa_signer_email_attribute");
+		
+		// Get email of workflow creator.  If accounts in ServiceNow are synced/aligned to 
+		// Ironclad account email addresses, you can use a user's profile as the creator (e.g., the 
+		// email of the user that created the agreement request, or a designated workflow owner per
+		// business unit, etc.) 
+		var creatorEmail = gs.getProperty("legalAgreements.ironclad_workflow_creator");
+		
+		// Create the request
+		var request = new sn_ws.RESTMessageV2("Ironclad", "launch workflow");
+		request.setStringParameter("ironclad_env", icEnv);
+		request.setStringParameter("ironclad_api_key", icKey);
+		
+		var attributes;
+		var templateID;
+		// Create the base launch body using the details in the agreement request
+		var reqBody  = {
+			attributes: {
+				counterpartyName: current.counterparty_name.toString(),
+				agreementDate: current.agreement_date.toString(),
+				totalContractValue: {
+					currency: "USD",
+					amount: +current.agreement_value.toString()
+				},
+// 				signera203ff96725c46b3b9cc542a1a9775a3: current.counterparty_signer_name.toString(),
+// 				signer79b400b2cdb04a08afa1245b24c92734: current.counterparty_signer_email.toString(),
+				sNOWAgreementRecordId: current.sys_id.toString(),
+				sNOWAgreementNumber: current.number.toString()
+			},
+			creator: {
+				email: creatorEmail,
+				type: "email"
+			},
+		};
+
+		// Set the signer name and email using the configured attribute names
+		reqBody.attributes[icMSASignerNameAttr] = current.counterparty_signer_name.toString();
+		reqBody.attributes[icMSASignerEmailAttr] = current.counterparty_signer_email.toString();
+
+		// Set the workflow template id
+		switch (current.agreement_type.toString()) {
+			case "NDA": 
+				reqBody.template = icNDATemplate;
+				break;
+			case "MSA": 
+				reqBody.template = icMSATemplate;
+				break;
+			default:
+				break;
+		}
+		
+		request.setRequestBody(JSON.stringify(reqBody));
+		
+		gs.info("Sending Ironclad request body: " + JSON.stringify(request.getRequestBody()));
+		
+		var response = request.execute();
+		
+		gs.info("Checking Ironclad response...");
+		gs.info("Ironclad response status: " + response.getStatusCode());
+		gs.info("Ironclad error message: " + response.getErrorMessage());
+		gs.info("Ironclad response body: " + response.getBody());
+// 		var headers = response.getAllHeaders();
+// 		gs.info("Ironclad response headers:");
+// 		for(var i in headers){
+// 			gs.info("\tIronclad header \"" + headers[i].name + "\": " + headers[i].value);
+// 		}
+		
+		// Update Legal Request with Ironclad workflow details
+		var wfData = JSON.parse(response.getBody());
+		current.setValue("ironclad_workflow_url", "https://" + icEnv + "/workflow/" + wfData.id);
+		current.setValue("ironclad_workflow_stage", wfData.step);
+		current.setValue("ironclad_workflow_status", wfData.status);
+		current.update("Ironclad launch details");
+	} 
+	catch (err) {
+		gs.debug('Ironclad launch error: ' + err);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-18 22:27:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>063c8c9397151110940a7b771153af8c</sys_id>
+        <sys_name>Ironclad: Launch Agreement Workflow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_update_name>sys_script_063c8c9397151110940a7b771153af8c</sys_update_name>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=063c8c9397151110940a7b771153af8c"/>
+</record_update>

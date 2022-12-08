@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="12ee37062f621110443b5fd92799b6e9" extends="task" label="Legal Agreement Task" max_length="40" name="x_749125_legal_i_0_legal_agreement_task" type="collection">
+        <element label="Agreement Date" max_length="40" name="agreement_date" type="glide_date"/>
+        <element choice="1" label="Agreement Type" max_length="40" name="agreement_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Master Service Agreement" value="MSA"/>
+                <element inactive_on_update="false" label="Non-Disclosure Agreement" value="NDA"/>
+            </choice>
+        </element>
+        <element label="Agreement Value" max_length="20" name="agreement_value" type="currency"/>
+        <element label="Counterparty Name" max_length="100" name="counterparty_name" type="string"/>
+        <element label="Counterparty Signer Email" max_length="100" name="counterparty_signer_email" type="string"/>
+        <element label="Counterparty Signer Name" max_length="100" name="counterparty_signer_name" type="string"/>
+        <element label="Ironclad Legal Approved" max_length="40" name="ironclad_legal_approved" read_only="true" type="boolean"/>
+        <element label="Ironclad Workflow Stage" max_length="50" name="ironclad_workflow_stage" read_only="true" type="string"/>
+        <element label="Ironclad Workflow Status" max_length="50" name="ironclad_workflow_status" read_only="true" type="string"/>
+        <element label="Ironclad Workflow URL" max_length="200" name="ironclad_workflow_url" read_only="true" type="url"/>
+    </element>
+</database>

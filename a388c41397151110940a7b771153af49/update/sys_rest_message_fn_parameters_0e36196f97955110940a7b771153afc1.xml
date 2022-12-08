@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>ironclad_env</name>
+        <rest_message_function display_value="get workflow">4bf5556f97955110940a7b771153af3c</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-19 22:28:08</sys_created_on>
+        <sys_id>0e36196f97955110940a7b771153afc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ironclad_env</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_0e36196f97955110940a7b771153afc1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-19 22:28:08</sys_updated_on>
+        <type>string</type>
+        <value/>
+    </sys_rest_message_fn_parameters>
+</record_update>

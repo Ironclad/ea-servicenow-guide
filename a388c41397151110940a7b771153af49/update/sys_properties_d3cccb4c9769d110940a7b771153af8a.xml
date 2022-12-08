@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>API key for the Ironclad environment.  This API key must be generated from an instance in the same environment as specified in the ironclad_environment system property.</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>legalAgreements.ironclad_api_key</name>
+        <read_roles/>
+        <suffix>ironclad_api_key</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-21 20:25:16</sys_created_on>
+        <sys_id>d3cccb4c9769d110940a7b771153af8a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>legalAgreements.ironclad_api_key</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_update_name>sys_properties_d3cccb4c9769d110940a7b771153af8a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-06 17:37:53</sys_updated_on>
+        <type>string</type>
+        <value>GQATh2RHPjV35d1RbG-jL0Rx1rIeLav0pJ2rUUqrFRCE</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3cccb4c9769d110940a7b771153af8a"/>
+</record_update>

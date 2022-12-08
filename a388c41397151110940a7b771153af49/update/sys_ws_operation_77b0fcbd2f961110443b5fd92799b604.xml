@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Workflow Completed</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	// Get Ironclad env and API key from application properties
+	var icEnv = gs.getProperty("legalAgreements.ironclad_environment");
+	var icKey = gs.getProperty("legalAgreements.ironclad_api_key");
+	
+	// Get template IDs - define other workflow types if needed and use their template IDs here.
+	var icMSATemplate = gs.getProperty("legalAgreements.ironclad_msa_template");
+	var icNDATemplate = gs.getProperty("legalAgreements.ironclad_nda_template");
+		
+	var legalAgreementReqTable = "x_749125_legal_i_0_legal_agreement_task";
+	
+	// See if a relevant workflow was completed
+	var wfTemplateID = request.body.data.payload.templateID;
+	if (wfTemplateID === icMSATemplate ||
+		wfTemplateID === icNDATemplate) {
+
+		// Get repository record details (assume first record is the target)
+		var recId = request.body.data.payload.recordIDs[0];
+		var icMsg = new sn_ws.RESTMessageV2("Ironclad", "get record");
+		icMsg.setStringParameter("ironclad_env", icEnv);
+		icMsg.setStringParameter("ironclad_api_key", icKey);
+		icMsg.setStringParameter("record_id", recId);
+		
+		gs.info("Retrieving Ironclad record " + recId);
+		var recResp = icMsg.execute();
+		var recData = JSON.parse(recResp.getBody());
+		var fileName = recData.attachments.signedCopy.filename;
+		var contentType = recData.attachments.signedCopy.contentType;	
+
+		// Get the target Legal Agreement Request
+		var recAgreementProp = "sNOWAgreementRecordId_f6eade0e-c9a4-4248-84de-50342857c99a_string";
+		var agreementReqId = recData.properties[recAgreementProp].value;
+		gs.info("Ironclad workflow completed for agreement request " + agreementReqId);
+		var agreementRec = new GlideRecord(legalAgreementReqTable);
+		agreementRec.get(agreementReqId);
+		// Update workflow status on agreement request
+		agreementRec.setValue("ironclad_workflow_stage", "Completed");
+		// Default value for "Completed" task state is 3.
+		agreementRec.setValue("state", 3);
+		agreementRec.update("Ironclad update on completion");
+
+		gs.info("Retrieving contract attachment from record");
+		icMsg = new sn_ws.RESTMessageV2("Ironclad", "get record attachment");
+		icMsg.setStringParameter("ironclad_env", icEnv);
+		icMsg.setStringParameter("ironclad_api_key", icKey);
+		icMsg.setStringParameter("record_id", recId);
+		// We assume here that the standard "signedCopy" attachment is desired.
+		// If your workflow involves multiple documents, you may need to adjust 
+		// this to target the required attachment.
+		icMsg.setStringParameter("attachment_key", "signedCopy");
+		// Attach signed contract to agreement request record
+		icMsg.saveResponseBodyAsAttachment(legalAgreementReqTable, agreementReqId, fileName);
+		var docResp = icMsg.execute();
+		
+		var attachSysId = docResp.getResponseAttachmentSysid();
+		gs.info("Record attachment id " + attachSysId + " attached to agreement " + agreementReqId);
+	}
+	else {
+		gs.info("Alternate Ironclad workflow template type completed: " + wfTemplateID);
+	}
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_749125_legal_i_0/ironclad_webhook/workflow_completed</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/workflow_completed</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-03 02:18:56</sys_created_on>
+        <sys_id>77b0fcbd2f961110443b5fd92799b604</sys_id>
+        <sys_name>Workflow Completed</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_update_name>sys_ws_operation_77b0fcbd2f961110443b5fd92799b604</sys_update_name>
+        <web_service_definition display_value="Ironclad Webhooks">019e49a797955110940a7b771153aff9</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

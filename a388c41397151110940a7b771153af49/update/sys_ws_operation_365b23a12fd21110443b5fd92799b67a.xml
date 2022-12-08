@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Workflow Approval Change</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	// Get Ironclad env and API key from application properties
+	var icEnv = gs.getProperty("legalAgreements.ironclad_environment");
+	var icKey = gs.getProperty("legalAgreements.ironclad_api_key");
+	
+	var wfID = request.body.data.payload.workflowID;
+	gs.info("Ironclad approval update received for workflow " + wfID);
+	var icMSATemplate = gs.getProperty("legalAgreements.ironclad_msa_template");
+	var icNDATemplate = gs.getProperty("legalAgreements.ironclad_nda_template");
+
+	// Approval events do not include template ID, so we need to get the 
+	// workflow before checking the type of workflow
+	
+	// Get the updated workflow details
+	var icMsg = new sn_ws.RESTMessageV2("Ironclad", "get workflow");
+	icMsg.setStringParameter("ironclad_env", icEnv);
+	icMsg.setStringParameter("ironclad_api_key", icKey);
+	gs.info("Ironclad getting workflow " + wfID);
+	icMsg.setStringParameter("workflow_id", wfID);
+	gs.info("Ironclad calling endpoint: " + icMsg.getEndpoint());
+	var wfResp = icMsg.execute();
+	var wfData = JSON.parse(wfResp.getBody());
+
+	// See if an MSA was updated - no attribute updates are needed from NDAs
+	if (wfData.template === icMSATemplate) {
+		// Get the target Legal Agreement Task
+		var agreementReqId = wfData.attributes.sNOWAgreementRecordId;
+		gs.info("Ironclad approval update for agreement " + agreementReqId);
+		var agreementRec = new GlideRecord("x_749125_legal_i_0_legal_agreement_task");
+		agreementRec.get(agreementReqId);
+
+		// Update the Legal Agreement Task
+		
+		// See if legal approval was received, and if so, update task field 
+		// so that appropriate SNOW workflows can be triggered
+		gs.info("Ironclad approval role = " + request.body.data.payload.approvalName);
+		gs.info("Ironclad approval status = " + request.body.data.payload.status);
+
+		if (request.body.data.payload.approvalName === "Legal") {
+			if (request.body.data.payload.status === "approved") {
+				gs.info("Ironclad setting agreement legal_approved to true");
+				agreementRec.setValue("ironclad_legal_approved", true);
+			}
+			else {
+				gs.info("Ironclad setting agreement legal_approved to false");
+				agreementRec.setValue("ironclad_legal_approved", false);
+			}
+		}
+
+		agreementRec.setValue("ironclad_workflow_stage", wfData.step);
+		agreementRec.setValue("ironclad_workflow_status", wfData.status);
+		agreementRec.update("Ironclad update");
+	}
+	else {
+		gs.info("Ironclad workflow of alternate type approved: " + request.body.data.payload.templateID);
+	}
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_749125_legal_i_0/ironclad_webhook/approval_change</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/approval_change</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-02 21:15:11</sys_created_on>
+        <sys_id>365b23a12fd21110443b5fd92799b67a</sys_id>
+        <sys_name>Workflow Approval Change</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_update_name>sys_ws_operation_365b23a12fd21110443b5fd92799b67a</sys_update_name>
+        <web_service_definition display_value="Ironclad Webhooks">019e49a797955110940a7b771153aff9</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Agreement Details" section_id="50254cda2f621110443b5fd92799b6bc" sys_domain="global" table="x_749125_legal_i_0_legal_agreement_task" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>agreement_type</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 21:01:51</sys_created_on>
+            <sys_id>c6a185152fc31110443b5fd92799b689</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Agreement Details" display_value="Agreement Details" name="x_749125_legal_i_0_legal_agreement_task" sys_domain="global" view="Default view">50254cda2f621110443b5fd92799b6bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 21:01:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>agreement_date</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 21:01:51</sys_created_on>
+            <sys_id>4aa185152fc31110443b5fd92799b689</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Agreement Details" display_value="Agreement Details" name="x_749125_legal_i_0_legal_agreement_task" sys_domain="global" view="Default view">50254cda2f621110443b5fd92799b6bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 21:01:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>counterparty_name</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 21:01:51</sys_created_on>
+            <sys_id>caa185152fc31110443b5fd92799b689</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Agreement Details" display_value="Agreement Details" name="x_749125_legal_i_0_legal_agreement_task" sys_domain="global" view="Default view">50254cda2f621110443b5fd92799b6bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 21:01:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>agreement_value</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 21:01:51</sys_created_on>
+            <sys_id>4ea185152fc31110443b5fd92799b689</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Agreement Details" display_value="Agreement Details" name="x_749125_legal_i_0_legal_agreement_task" sys_domain="global" view="Default view">50254cda2f621110443b5fd92799b6bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 21:01:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>counterparty_signer_name</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 21:01:51</sys_created_on>
+            <sys_id>cea185152fc31110443b5fd92799b689</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Agreement Details" display_value="Agreement Details" name="x_749125_legal_i_0_legal_agreement_task" sys_domain="global" view="Default view">50254cda2f621110443b5fd92799b6bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 21:01:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>counterparty_signer_email</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 21:01:51</sys_created_on>
+            <sys_id>42a185152fc31110443b5fd92799b68a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Agreement Details" display_value="Agreement Details" name="x_749125_legal_i_0_legal_agreement_task" sys_domain="global" view="Default view">50254cda2f621110443b5fd92799b6bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 21:01:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ironclad_workflow_url</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 21:01:51</sys_created_on>
+            <sys_id>c2a185152fc31110443b5fd92799b68a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Agreement Details" display_value="Agreement Details" name="x_749125_legal_i_0_legal_agreement_task" sys_domain="global" view="Default view">50254cda2f621110443b5fd92799b6bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 21:01:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ironclad_workflow_stage</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 21:01:51</sys_created_on>
+            <sys_id>46a185152fc31110443b5fd92799b68a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Agreement Details" display_value="Agreement Details" name="x_749125_legal_i_0_legal_agreement_task" sys_domain="global" view="Default view">50254cda2f621110443b5fd92799b6bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 21:01:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ironclad_workflow_status</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 21:01:51</sys_created_on>
+            <sys_id>c6a185152fc31110443b5fd92799b68a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Agreement Details" display_value="Agreement Details" name="x_749125_legal_i_0_legal_agreement_task" sys_domain="global" view="Default view">50254cda2f621110443b5fd92799b6bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 21:01:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Agreement Details</caption>
+            <header>false</header>
+            <name>x_749125_legal_i_0_legal_agreement_task</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-16 22:39:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>50254cda2f621110443b5fd92799b6bc</sys_id>
+            <sys_name>x_749125_legal_i_0_legal_agreement_task</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+            <sys_update_name>sys_ui_section_50254cda2f621110443b5fd92799b6bc</sys_update_name>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

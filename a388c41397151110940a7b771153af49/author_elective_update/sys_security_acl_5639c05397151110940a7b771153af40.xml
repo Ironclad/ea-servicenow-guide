@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <name>x_749125_legal_i_0_legal_agreement_request</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-18 22:13:16</sys_created_on>
+        <sys_id>5639c05397151110940a7b771153af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_749125_legal_i_0_legal_agreement_request</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_update_name>sys_security_acl_5639c05397151110940a7b771153af40</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-18 22:13:16</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Legal Intake Management">a388c41397151110940a7b771153af49</application>
+        <file_path/>
+        <instance_id>65a8398ddb62dbc04f035d00cf9619c1</instance_id>
+        <instance_name>dev60711</instance_name>
+        <name>sys_security_acl_5639c05397151110940a7b771153af40</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <name>x_749125_legal_i_0_legal_agreement_request</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-18 22:13:16</sys_created_on>
+        <sys_id>5639c05397151110940a7b771153af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_749125_legal_i_0_legal_agreement_request</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_update_name>sys_security_acl_5639c05397151110940a7b771153af40</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-18 22:13:16</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>]]></payload>
+        <payload_hash>-637354310</payload_hash>
+        <record_name>x_749125_legal_i_0_legal_agreement_request</record_name>
+        <reverted_from/>
+        <source>20bcfae52f121110443b5fd92799b660</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-02 17:50:58</sys_created_on>
+        <sys_id>03bc7ee52f121110443b5fd92799b695</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18399d297610000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-02 17:50:58</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>cfbc7ee58a1211109621762d7800da94</update_guid>
+        <update_guid_history>cfbc7ee58a1211109621762d7800da94:-637354310</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-08 17:08:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>719928dc056e44e5a72d9d6b897a3631</sys_id>
+        <sys_metadata>5639c05397151110940a7b771153af40</sys_metadata>
+        <sys_name>x_749125_legal_i_0_legal_agreement_request</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_parent display_value="">0cbcbae52f121110443b5fd92799b6fb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_scope_delete display_value="">76957533a4164a94af24a6a3a42a2510</sys_scope_delete>
+        <sys_update_name>sys_security_acl_5639c05397151110940a7b771153af40</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_5639c05397151110940a7b771153af40">03bc7ee52f121110443b5fd92799b695</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

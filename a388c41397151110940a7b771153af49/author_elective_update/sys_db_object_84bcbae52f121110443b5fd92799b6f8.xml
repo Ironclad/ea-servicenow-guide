@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access/>
+        <actions_access>true</actions_access>
+        <alter_access>true</alter_access>
+        <caller_access/>
+        <client_scripts_access>true</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>true</create_access>
+        <create_access_controls>false</create_access_controls>
+        <delete_access>false</delete_access>
+        <is_extendable>false</is_extendable>
+        <label>Legal Agreement Request</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_749125_legal_i_0_legal_agreement_request</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-02 17:50:47</sys_created_on>
+        <sys_id>84bcbae52f121110443b5fd92799b6f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Legal I 0 Legal Agreement Request</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_update_name>sys_db_object_84bcbae52f121110443b5fd92799b6f8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-10-02 17:50:47</sys_updated_on>
+        <update_access>true</update_access>
+        <user_role/>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Legal Intake Management">a388c41397151110940a7b771153af49</application>
+        <file_path/>
+        <instance_id>65a8398ddb62dbc04f035d00cf9619c1</instance_id>
+        <instance_name>dev60711</instance_name>
+        <name>sys_db_object_84bcbae52f121110443b5fd92799b6f8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access/><actions_access>true</actions_access><alter_access>true</alter_access><caller_access/><client_scripts_access>true</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><is_extendable>false</is_extendable><label>Legal Agreement Request</label><live_feed_enabled>false</live_feed_enabled><name>x_749125_legal_i_0_legal_agreement_request</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-10-02 17:50:47</sys_created_on><sys_id>84bcbae52f121110443b5fd92799b6f8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Legal I 0 Legal Agreement Request</sys_name><sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package><sys_policy/><sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope><sys_update_name>sys_db_object_84bcbae52f121110443b5fd92799b6f8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-10-02 17:50:47</sys_updated_on><update_access>true</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>-1981645015</payload_hash>
+        <record_name>Legal Agreement Request</record_name>
+        <reverted_from/>
+        <source>d8a316332f021110443b5fd92799b613</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2022-09-27 04:22:01</sys_created_on>
+        <sys_id>a4bcfae52f121110443b5fd92799b65b</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1837d2e2a280000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Table</type>
+        <update_guid>64bcfae5b1121110917681756900ed5b</update_guid>
+        <update_guid_history>64bcfae5b1121110917681756900ed5b:-1981645015</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-08 17:08:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>be4af075537f4d408d845e1a1744de40</sys_id>
+        <sys_metadata>84bcbae52f121110443b5fd92799b6f8</sys_metadata>
+        <sys_name>Legal Agreement Request</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_scope_delete display_value="">76957533a4164a94af24a6a3a42a2510</sys_scope_delete>
+        <sys_update_name>sys_db_object_84bcbae52f121110443b5fd92799b6f8</sys_update_name>
+        <sys_update_version display_value="sys_db_object_84bcbae52f121110443b5fd92799b6f8">a4bcfae52f121110443b5fd92799b65b</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

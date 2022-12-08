@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices>ironcladapp.com&#13;
+demo.ironcladapp.com&#13;
+preview.ironcladapp.com&#13;
+eu1.ironcladapp.com</choices>
+        <description>Ironclad environment (as full hostname) to be integrated</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>legalAgreements.ironclad_environment</name>
+        <read_roles/>
+        <suffix>ironclad_environment</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-08-21 20:15:55</sys_created_on>
+        <sys_id>c56acb4c9769d110940a7b771153af7e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>legalAgreements.ironclad_environment</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_update_name>sys_properties_c56acb4c9769d110940a7b771153af7e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-09-06 17:38:11</sys_updated_on>
+        <type>string</type>
+        <value>demo.ironcladapp.com</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=c56acb4c9769d110940a7b771153af7e"/>
+</record_update>

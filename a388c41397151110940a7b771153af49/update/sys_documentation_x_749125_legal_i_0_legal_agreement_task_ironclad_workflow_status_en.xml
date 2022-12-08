@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="ironclad_workflow_status" label="Ironclad Workflow Status" language="en" table="x_749125_legal_i_0_legal_agreement_task">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ironclad_workflow_status</element>
+            <help/>
+            <hint/>
+            <label>Ironclad Workflow Status</label>
+            <language>en</language>
+            <name>x_749125_legal_i_0_legal_agreement_task</name>
+            <plural>Ironclad Workflow Status</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-10-16 22:23:56</sys_created_on>
+            <sys_name>Ironclad Workflow Status</sys_name>
+            <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+            <sys_update_name>sys_documentation_x_749125_legal_i_0_legal_agreement_task_ironclad_workflow_status_en</sys_update_name>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

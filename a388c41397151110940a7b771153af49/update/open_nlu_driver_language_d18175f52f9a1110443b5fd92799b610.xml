@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="open_nlu_driver_language">
+    <open_nlu_driver_language action="INSERT_OR_UPDATE">
+        <code>fq</code>
+        <driver display_value="">64c023c17300330021a044764df6a70e</driver>
+        <driver_codes>fq</driver_codes>
+        <language>Canadian French</language>
+        <sys_class_name>open_nlu_driver_language</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-10-03 07:00:50</sys_created_on>
+        <sys_id>d18175f52f9a1110443b5fd92799b610</sys_id>
+        <sys_name>Canadian French</sys_name>
+        <sys_package display_value="Legal Intake Management" source="x_749125_legal_i_0">a388c41397151110940a7b771153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Legal Intake Management">a388c41397151110940a7b771153af49</sys_scope>
+        <sys_update_name>open_nlu_driver_language_d18175f52f9a1110443b5fd92799b610</sys_update_name>
+    </open_nlu_driver_language>
+</record_update>
