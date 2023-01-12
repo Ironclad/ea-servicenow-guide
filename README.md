@@ -17,6 +17,8 @@ Use whatever SSH key generation tool you have - if you are using ssh-keygen on a
 Be sure to keep track of the passphrase you use for the SSH key when you create it.  It will be needed in the ServiceNow credential setup.
 
 ### Register SSH key with your Github account
+The general instructions for adding a new SSH key for your Github account can be [found here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).  The following is a summary of the necessary steps:
+
 - In your GitHub account, navigate to "Settings" (using the menu on your profile picture), and go to "SSH and GPG keys"
 - Under "SSH Keys", click the "New" button 
 - Set the title to whatever makes sense to you (e.g., "ServiceNow dev key")
